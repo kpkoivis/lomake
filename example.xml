@@ -38,9 +38,32 @@
         <pot-ammatti>Pizzakuski</pot-ammatti>
         <pot-työnantaja>Roope Ankka Oy</pot-työnantaja>
         <pot-toteamistapa>Passi</pot-toteamistapa>
-
+        <pot-sairauspäiväraha>true</pot-sairauspäiväraha>
+        <pot-työssäjaksamismahdollisuudet>false</pot-työssäjaksamismahdollisuudet>
+        <pot-osasairauspäiväraha>false</pot-osasairauspäiväraha>
+        <pot-lääkkeet>false</pot-lääkkeet>
+        <pot-kuntoutus>true</pot-kuntoutus>
+        <pot-eläke>false</pot-eläke>
+        <pot-muu-lausunto-syy>Veteraanikuntoutus</pot-muu-lausunto-syy>
         <pot-seurantapvm-henkilökohtainen>12.02.2019</pot-seurantapvm-henkilökohtainen>
         <pot-seurantapvm-asiakirjoista>01.11.1964</pot-seurantapvm-asiakirjoista>
+
+        <pot-dg-data>
+            <icd-code>I48</icd-code>
+            <dg-literal>Eteisvärinä</dg-literal>
+        </pot-dg-data>
+        <pot-dg-data>
+            <icd-code>J45.9</icd-code>
+            <dg-literal>Määrittämätön astma</dg-literal>
+        </pot-dg-data>
+        <pot-dg-data>
+            <icd-code>J06.9</icd-code>
+            <dg-literal>Flunssa</dg-literal>
+        </pot-dg-data>
+        <pot-dg-data>
+            <icd-code>I25.1</icd-code>
+            <dg-literal>Sepelvaltimotauti</dg-literal>
+        </pot-dg-data>
     </lomake>
 </users-data>
     

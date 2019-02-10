@@ -164,7 +164,7 @@
                                                                      <fo:block>
                                                                         <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
                                                                         Henkilökohtaisesti
-                                                                        <fo:inline font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-seurantapvm-henkilökohtainen"/></fo:inline>
+                                                                        <fo:inline font-family="Helvetica" font-weight="bold" font-size="100%"><xsl:value-of select="lomake/pot-seurantapvm-henkilökohtainen"/></fo:inline>
                                                                     </fo:block>
                                                                 </fo:block-container>
                                                                 <xsl:if test="boolean(lomake/pot-seurantapvm-henkilökohtainen)">
@@ -180,7 +180,7 @@
                                                                      <fo:block>
                                                                         <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
                                                                         Asiakirjoista
-                                                                        <fo:inline font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-seurantapvm-asiakirjoista"/></fo:inline>
+                                                                        <fo:inline font-family="Helvetica" font-weight="bold" font-size="100%"><xsl:value-of select="lomake/pot-seurantapvm-asiakirjoista"/></fo:inline>
                                                                     </fo:block>
                                                                 </fo:block-container>
                                                                 <xsl:if test="boolean(lomake/pot-seurantapvm-asiakirjoista)">
@@ -226,41 +226,62 @@
                                                         <fo:block>
                                                             <fo:block-container height="4mm">                                                     
                                                                 <fo:block-container left="0mm" top="0mm" position="absolute" >
-                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Sairauspäiväraha</fo:block>
+                                                                     <fo:block>
+                                                                        <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
+                                                                        Sairauspäiväraha
+                                                                    </fo:block>
                                                                 </fo:block-container>
-                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
-                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
-                                                                </fo:block-container>    
+                                                                <xsl:if test="lomake/pot-sairauspäiväraha = 'true'">
+                                                                    <fo:block-container left="0.4mm" top="0.4mm" position="absolute" >
+                                                                        <fo:block><fo:inline font-family="ZapfDingbats" font-size="100%">&#x2718;</fo:inline></fo:block>
+                                                                    </fo:block-container>    
+                                                                </xsl:if>     
                                                             </fo:block-container>
                                                         </fo:block>
                                                         <fo:block>
                                                             <fo:block-container height="4mm">                                                     
                                                                 <fo:block-container left="0mm" top="0mm" position="absolute" >
-                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Työterveyshuollon lausunto työssäjaksamismahdollisuuksista</fo:block>
+                                                                     <fo:block>
+                                                                        <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
+                                                                        Työterveyshuollon lausunto työssäjaksamismahdollisuuksista
+                                                                    </fo:block>
                                                                 </fo:block-container>
-                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
-                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
-                                                                </fo:block-container>    
+                                                                <xsl:if test="lomake/pot-työssäjaksamismahdollisuudet = 'true'">
+                                                                    <fo:block-container left="0.4mm" top="0.4mm" position="absolute" >
+                                                                        <fo:block><fo:inline font-family="ZapfDingbats" font-size="100%">&#x2718;</fo:inline></fo:block>
+                                                                    </fo:block-container>    
+                                                                </xsl:if>     
                                                             </fo:block-container>
                                                         </fo:block>
                                                         <fo:block>
                                                             <fo:block-container height="4mm">                                                     
                                                                 <fo:block-container left="0mm" top="0mm" position="absolute" >
-                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Osasairauspäiväraha</fo:block>
+                                                                     <fo:block>
+                                                                        <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
+                                                                        Osasairauspäiväraha
+                                                                    </fo:block>
                                                                 </fo:block-container>
-                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
-                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
-                                                                </fo:block-container>    
+                                                                <xsl:if test="lomake/pot-osasairauspäiväraha = 'true'">
+                                                                    <fo:block-container left="0.4mm" top="0.4mm" position="absolute" >
+                                                                        <fo:block><fo:inline font-family="ZapfDingbats" font-size="100%">&#x2718;</fo:inline></fo:block>
+                                                                    </fo:block-container>    
+                                                                </xsl:if>     
                                                             </fo:block-container>
                                                         </fo:block>
                                                         <fo:block>
                                                             <fo:block-container height="4mm">                                                     
                                                                 <fo:block-container left="0mm" top="0mm" position="absolute" >
-                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Muu, mikä?</fo:block>
+                                                                     <fo:block>
+                                                                        <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
+                                                                        Muu, mikä?
+                                                                        <fo:inline font-family="Helvetica" font-weight="bold" font-size="100%"><xsl:value-of select="lomake/pot-muu-lausunto-syy"/></fo:inline>
+                                                                    </fo:block>
                                                                 </fo:block-container>
-                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
-                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
-                                                                </fo:block-container>    
+                                                                <xsl:if test="boolean(lomake/pot-muu-lausunto-syy)">
+                                                                    <fo:block-container left="0.4mm" top="0.4mm" position="absolute" >
+                                                                        <fo:block><fo:inline font-family="ZapfDingbats" font-size="100%">&#x2718;</fo:inline></fo:block>
+                                                                    </fo:block-container>    
+                                                                </xsl:if>     
                                                             </fo:block-container>
                                                         </fo:block>
                                                 </fo:table-cell>
@@ -268,31 +289,46 @@
                                                         <fo:block>
                                                             <fo:block-container height="4mm">                                                     
                                                                 <fo:block-container left="0mm" top="0mm" position="absolute" >
-                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Erityiskorvattavat lääkkeet tai kliiniset ravintovalmisteet</fo:block>
+                                                                     <fo:block>
+                                                                        <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
+                                                                        Erityiskorvattavat lääkkeet tai kliiniset ravintovalmisteet
+                                                                    </fo:block>
                                                                 </fo:block-container>
-                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
-                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
-                                                                </fo:block-container>    
+                                                                <xsl:if test="lomake/pot-lääkkeet = 'true'">
+                                                                    <fo:block-container left="0.4mm" top="0.4mm" position="absolute" >
+                                                                        <fo:block><fo:inline font-family="ZapfDingbats" font-size="100%">&#x2718;</fo:inline></fo:block>
+                                                                    </fo:block-container>    
+                                                                </xsl:if>     
                                                             </fo:block-container>
                                                         </fo:block>
                                                         <fo:block>
                                                             <fo:block-container height="4mm">                                                     
                                                                 <fo:block-container left="0mm" top="0mm" position="absolute" >
-                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Kuntoutus</fo:block>
+                                                                     <fo:block>
+                                                                        <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
+                                                                        Kuntoutus
+                                                                    </fo:block>
                                                                 </fo:block-container>
-                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
-                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
-                                                                </fo:block-container>    
+                                                                <xsl:if test="lomake/pot-kuntoutus = 'true'">
+                                                                    <fo:block-container left="0.4mm" top="0.4mm" position="absolute" >
+                                                                        <fo:block><fo:inline font-family="ZapfDingbats" font-size="100%">&#x2718;</fo:inline></fo:block>
+                                                                    </fo:block-container>    
+                                                                </xsl:if>     
                                                             </fo:block-container>
                                                         </fo:block>
                                                         <fo:block>
                                                             <fo:block-container height="4mm">                                                     
                                                                 <fo:block-container left="0mm" top="0mm" position="absolute" >
-                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Työkyvyttömyyseläke / Kuntoutustuki</fo:block>
+                                                                     <fo:block>
+                                                                        <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
+                                                                        Työkyvyttömyyseläke / Kuntoutustuki
+                                                                    </fo:block>
                                                                 </fo:block-container>
-                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
-                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
-                                                                </fo:block-container>    
+                                                                <xsl:if test="lomake/pot-kuntoutus = 'true'">
+                                                                    <fo:block-container left="0.4mm" top="0.4mm" position="absolute" >
+                                                                        <fo:block><fo:inline font-family="ZapfDingbats" font-size="100%">&#x2718;</fo:inline></fo:block>
+                                                                    </fo:block-container>    
+                                                                </xsl:if>     
                                                             </fo:block-container>
                                                         </fo:block>
                                                 </fo:table-cell>
@@ -316,24 +352,9 @@
                                 </fo:table-cell>
                                 <fo:table-cell>
                                     <fo:block>Työkykyyn vaikuttavat sairaudet tärkeysjärjestyksessä (myös ICD-koodit):</fo:block>
-                                    <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
-                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
-                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
-                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
-                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
-                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
-                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
-                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
-                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
-                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
-                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
-                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
-                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
-                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
-                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
-                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
-                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
-                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
+                                    <xsl:for-each select="lomake/pot-dg-data">
+                                        <fo:block font-family="Helvetica" font-weight="bold" font-size="100%"><xsl:value-of select="icd-code"/><xsl:text> </xsl:text><xsl:value-of select="dg-literal"/></fo:block>
+                                    </xsl:for-each>
                                 </fo:table-cell>
                             </fo:table-row>
                         </fo:table-body>
@@ -350,33 +371,13 @@
                                   <fo:block>ESITIEDOT</fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell>
-                                    <fo:block>Työkykyyn vaikuttavat sairaudet tärkeysjärjestyksessä (myös ICD-koodit):</fo:block>
+                                    <fo:block>Something else...</fo:block>
 
                                 </fo:table-cell>
                             </fo:table-row>
                         </fo:table-body>
                     </fo:table>
 
-
-                    <fo:block id="end-of-document">
-                        <fo:instream-foreign-object>
-                            <svg width="200mm" height="150mm" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M153 334
-C153 334 151 334 151 334
-C151 339 153 344 156 344
-C164 344 171 339 171 334
-C171 322 164 314 156 314
-C142 314 131 322 131 334
-C131 350 142 364 156 364
-C175 364 191 350 191 334
-C191 311 175 294 156 294
-C131 294 111 311 111 334
-C111 361 131 384 156 384
-C186 384 211 361 211 334
-C211 300 186 274 156 274" style="fill:yellow;stroke:red;stroke-width:2"/>
-                            </svg>
-                        </fo:instream-foreign-object>
-                    </fo:block>
                 </fo:flow>
             </fo:page-sequence>
         </fo:root>
