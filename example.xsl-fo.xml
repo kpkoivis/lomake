@@ -34,27 +34,25 @@
                                             <fo:table-row>
                                                 <fo:table-cell>
                                                     <fo:block>
-                                                        Liitteitä 6 kpl
+                                                        Liitteitä <fo:inline font-weight="bold"><xsl:value-of select="lomake/liite-lkm"/></fo:inline> kpl
                                                     </fo:block>
                                                     <fo:block padding-before="5mm">
                                                         <fo:block-container height="7mm">
-                                                        
-                                                        <fo:block-container left="0mm" top="0mm" position="absolute" >
-                                                            <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Lisätietoja erillisellä liitteellä</fo:block>
+                                                            <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                                <fo:block><fo:inline font-family="ZapfDingbats" font-size="150%">&#x274F;</fo:inline>  Lisätietoja erillisellä liitteellä</fo:block>
+                                                            </fo:block-container>
+                                                            <xsl:if test="lomake/lisätietoja = 'true'">
+                                                                <fo:block-container left="0.4mm" top="0.4mm" position="absolute" >
+                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="100%">&#x2718;</fo:inline></fo:block>
+                                                                </fo:block-container>    
+                                                            </xsl:if>  
                                                         </fo:block-container>
-                                                        <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
-                                                            <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
-                                                        </fo:block-container>
-                                                              
-                                                        </fo:block-container>
-                                                        
-                                                    
                                                     </fo:block>
                                                 </fo:table-cell>
                                                 <fo:table-cell padding-left="5mm">
                                                     <fo:block>Henkilötunnus</fo:block>
-                                                    <fo:block text-align="center" margin-right="10mm" padding-top="1mm" padding-bottom="1mm" border-color="black" border-width="0.5mm" border-style="solid" font-size="125%">
-                                                        <fo:block >160272-0150</fo:block>
+                                                    <fo:block text-align="center" margin-right="10mm" padding-top="1mm" padding-bottom="1mm" border-color="black" border-width="0.5mm" border-style="solid" font-family="Helvetica" font-weight="bold" font-size="125%">
+                                                        <xsl:value-of select="lomake/hetu"/>
                                                     </fo:block>
                                                 </fo:table-cell>
                                             </fo:table-row>
@@ -70,7 +68,7 @@
                         <fo:table-column column-width="proportional-column-width(15)"/>
                         <fo:table-column column-width="proportional-column-width(85)"/>
                         <fo:table-body font-size="95%">
-                            <fo:table-row height="8mm">
+                            <fo:table-row height="7mm">
                                 <fo:table-cell>
                                   <fo:block>1</fo:block>
                                   <fo:block>HENKILÖ-</fo:block>
@@ -82,14 +80,14 @@
                                         <fo:table-column column-width="proportional-column-width(70)"/>
                                         <fo:table-column column-width="proportional-column-width(30)"/>
                                         <fo:table-body font-size="95%">
-                                            <fo:table-row height="8mm" border-bottom-style="solid" border-width="0.2mm">
+                                            <fo:table-row height="7mm" border-bottom-style="solid" border-width="0.2mm">
                                                 <fo:table-cell>
                                                     <fo:block>Sukunimi ja etunimet</fo:block>
-                                                    <fo:block font-family="Times" font-size="80%">Koivisto, Kristian Peter Juhani</fo:block>
+                                                    <fo:block font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-nimi"/></fo:block>
                                                 </fo:table-cell>
                                                 <fo:table-cell>
                                                     <fo:block>Puhelinnumero</fo:block>
-                                                    <fo:block font-family="Times" font-size="80%">050-483 3491</fo:block>
+                                                    <fo:block font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-puhnro"/></fo:block>
                                                 </fo:table-cell>
                                             </fo:table-row>
                                         </fo:table-body>
@@ -98,10 +96,10 @@
                                      <fo:table table-layout="fixed" width="100%">
                                         <fo:table-column column-width="proportional-column-width(100)"/>
                                         <fo:table-body font-size="95%">
-                                            <fo:table-row height="8mm" border-bottom-style="solid" border-width="0.2mm">
+                                            <fo:table-row height="7mm" border-bottom-style="solid" border-width="0.2mm">
                                                 <fo:table-cell>
                                                     <fo:block>Lähiosoite</fo:block>
-                                                    <fo:block font-family="Times" font-size="80%">Kukkatuoksunpenger 10</fo:block>
+                                                    <fo:block font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-lähiosoite"/></fo:block>
                                                 </fo:table-cell>
                                             </fo:table-row>
                                         </fo:table-body>
@@ -111,14 +109,14 @@
                                         <fo:table-column column-width="proportional-column-width(30)"/>
                                         <fo:table-column column-width="proportional-column-width(70)"/>
                                         <fo:table-body font-size="95%">
-                                            <fo:table-row height="8mm" border-bottom-style="solid" border-width="0.2mm">
+                                            <fo:table-row height="7mm" border-bottom-style="solid" border-width="0.2mm">
                                                 <fo:table-cell>
                                                     <fo:block>Postinumero</fo:block>
-                                                    <fo:block font-family="Times" font-size="80%">00950</fo:block>
+                                                    <fo:block font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-postinumero"/></fo:block>
                                                 </fo:table-cell>
                                                 <fo:table-cell>
                                                     <fo:block>Postitoimipaikka</fo:block>
-                                                    <fo:block font-family="Times" font-size="80%">Helsinki</fo:block>
+                                                    <fo:block font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-postitoimipaikka"/></fo:block>
                                                 </fo:table-cell>
                                             </fo:table-row>
                                         </fo:table-body>
@@ -128,14 +126,14 @@
                                         <fo:table-column column-width="proportional-column-width(60)"/>
                                         <fo:table-column column-width="proportional-column-width(40)"/>
                                         <fo:table-body font-size="95%">
-                                            <fo:table-row height="8mm" border-bottom-style="solid" border-width="0.2mm">
+                                            <fo:table-row height="7mm" border-bottom-style="solid" border-width="0.2mm">
                                                 <fo:table-cell>
                                                     <fo:block>Nykyinen työtehtävä</fo:block>
-                                                    <fo:block font-family="Times" font-size="80%">Peltiseppä</fo:block>
+                                                    <fo:block font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-nyk-työtehtävä"/></fo:block>
                                                 </fo:table-cell>
                                                 <fo:table-cell>
                                                     <fo:block>Ammatti</fo:block>
-                                                    <fo:block font-family="Times" font-size="80%">Ylinotaari</fo:block>
+                                                    <fo:block font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-ammatti"/></fo:block>
                                                 </fo:table-cell>
                                             </fo:table-row>
                                         </fo:table-body>
@@ -144,10 +142,10 @@
                                      <fo:table table-layout="fixed" width="100%">
                                         <fo:table-column column-width="proportional-column-width(100)"/>
                                         <fo:table-body font-size="95%">
-                                            <fo:table-row height="8mm" border-bottom-style="solid" border-width="0.2mm">
+                                            <fo:table-row height="7mm" border-bottom-style="solid" border-width="0.2mm">
                                                 <fo:table-cell>
                                                     <fo:block>Päätoimen työnantaja</fo:block>
-                                                    <fo:block font-family="Times" font-size="80%">Oy Apotti Ab</fo:block>
+                                                    <fo:block font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-työnantaja"/></fo:block>
                                                 </fo:table-cell>
                                             </fo:table-row>
                                         </fo:table-body>
@@ -157,33 +155,45 @@
                                         <fo:table-column column-width="proportional-column-width(50)"/>
                                         <fo:table-column column-width="proportional-column-width(50)"/>
                                         <fo:table-body font-size="95%">
-                                            <fo:table-row height="8mm">
+                                            <fo:table-row height="7mm">
                                                 <fo:table-cell>
                                                     <fo:block>Olen seurannut tutkittavan terveydentilaa alkaen:</fo:block>
                                                         <fo:block>
                                                             <fo:block-container height="4mm">                                                     
                                                                 <fo:block-container left="0mm" top="0mm" position="absolute" >
-                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Henkilökohtaisesti 17.03.2019</fo:block>
+                                                                     <fo:block>
+                                                                        <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
+                                                                        Henkilökohtaisesti
+                                                                        <fo:inline font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-seurantapvm-henkilökohtainen"/></fo:inline>
+                                                                    </fo:block>
                                                                 </fo:block-container>
-                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
-                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
-                                                                </fo:block-container>    
+                                                                <xsl:if test="boolean(lomake/pot-seurantapvm-henkilökohtainen)">
+                                                                    <fo:block-container left="0.4mm" top="0.4mm" position="absolute" >
+                                                                        <fo:block><fo:inline font-family="ZapfDingbats" font-size="100%">&#x2718;</fo:inline></fo:block>
+                                                                    </fo:block-container>    
+                                                                </xsl:if>     
                                                             </fo:block-container>
                                                         </fo:block>
                                                         <fo:block>
                                                             <fo:block-container height="4mm">                                                     
                                                                 <fo:block-container left="0mm" top="0mm" position="absolute" >
-                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Asiakirjoista 16.1.2002</fo:block>
+                                                                     <fo:block>
+                                                                        <fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>
+                                                                        Asiakirjoista
+                                                                        <fo:inline font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-seurantapvm-asiakirjoista"/></fo:inline>
+                                                                    </fo:block>
                                                                 </fo:block-container>
-                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
-                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
-                                                                </fo:block-container>    
+                                                                <xsl:if test="boolean(lomake/pot-seurantapvm-asiakirjoista)">
+                                                                    <fo:block-container left="0.4mm" top="0.4mm" position="absolute" >
+                                                                        <fo:block><fo:inline font-family="ZapfDingbats" font-size="100%">&#x2718;</fo:inline></fo:block>
+                                                                    </fo:block-container>    
+                                                                </xsl:if>     
                                                             </fo:block-container>
                                                         </fo:block>
                                                 </fo:table-cell>
                                                 <fo:table-cell>
                                                     <fo:block>Miten henkilöllisyys on todettu</fo:block>
-                                                    <fo:block font-family="Times" font-size="80%">Passi</fo:block>
+                                                    <fo:block font-family="Helvetica" font-weight="bold" font-size="120%"><xsl:value-of select="lomake/pot-toteamistapa"/></fo:block>
                                                 </fo:table-cell>
                                             </fo:table-row>
                                         </fo:table-body>

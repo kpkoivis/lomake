@@ -23,4 +23,24 @@
         <national-id>ABDD324KKD8</national-id>
         <price>69.36</price>
     </user-bill-data>
+
+
+    <lomake>
+        <liite-lkm>6</liite-lkm>
+        <lisätietoja>true</lisätietoja>
+        <hetu>010104A789B</hetu>
+        <pot-nimi>Ankka, Aku</pot-nimi>
+        <pot-lähiosoite>Ankkalinnankatu 2 B</pot-lähiosoite>
+        <pot-puhnro>050 563 6764</pot-puhnro>
+        <pot-postinumero>03287</pot-postinumero>
+        <pot-postitoimipaikka>Ankkalinna</pot-postitoimipaikka>
+        <pot-nyk-työtehtävä>Hanslankari</pot-nyk-työtehtävä>
+        <pot-ammatti>Pizzakuski</pot-ammatti>
+        <pot-työnantaja>Roope Ankka Oy</pot-työnantaja>
+        <pot-toteamistapa>Passi</pot-toteamistapa>
+
+        <pot-seurantapvm-henkilökohtainen>12.02.2019</pot-seurantapvm-henkilökohtainen>
+        <pot-seurantapvm-asiakirjoista>01.11.1964</pot-seurantapvm-asiakirjoista>
+    </lomake>
 </users-data>
+    
