@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="1.0">
+    <xsl:output encoding="UTF-8" indent="yes" method="xml" standalone="no" omit-xml-declaration="no"/>
+    <xsl:template match="users-data">
+        <fo:root language="EN">
+            <fo:layout-master-set>
+                <fo:simple-page-master master-name="A4-portrail" page-height="297mm" page-width="210mm" margin-top="5mm" margin-bottom="5mm" margin-left="20mm" margin-right="5mm">
+                    <fo:region-body margin-top="0mm" margin-bottom="20mm"/>
+                    <fo:region-before region-name="xsl-region-before" extent="0mm" display-align="before" precedence="true"/>
+                </fo:simple-page-master>
+            </fo:layout-master-set>
+            <fo:page-sequence master-reference="A4-portrail">
+
+                <fo:flow flow-name="xsl-region-body" border-collapse="collapse" reference-orientation="0">
+
+                    <fo:table table-layout="fixed" width="100%" font-size="8pt" text-align="left" display-align="center">
+                        <fo:table-column column-width="proportional-column-width(50)"/>
+                        <fo:table-column column-width="proportional-column-width(50)"/>
+                        <fo:table-body font-size="95%">
+                            <fo:table-row height="8mm">
+                                <fo:table-cell>
+                                  <fo:block></fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell>
+                                    <fo:block font-size="120%">Lääkärinlausunto B 1</fo:block>
+                                    <fo:block>sairauksista, hoidosta ja kuntoutuksesta sekä</fo:block>
+                                    <fo:block>työkyvystä</fo:block>
+                                    
+                                    <fo:table table-layout="fixed" width="100%" font-size="8pt" text-align="left" display-align="auto" space-before="5mm" space-after="5mm">
+                                        <fo:table-column column-width="proportional-column-width(50)"/>
+                                        <fo:table-column column-width="proportional-column-width(50)"/>
+                                        <fo:table-body font-size="95%">
+                                            <fo:table-row>
+                                                <fo:table-cell>
+                                                    <fo:block>
+                                                        Liitteitä 6 kpl
+                                                    </fo:block>
+                                                    <fo:block padding-before="5mm">
+                                                        <fo:block-container height="7mm">
+                                                        
+                                                        <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                            <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Lisätietoja erillisellä liitteellä</fo:block>
+                                                        </fo:block-container>
+                                                        <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
+                                                            <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
+                                                        </fo:block-container>
+                                                              
+                                                        </fo:block-container>
+                                                        
+                                                    
+                                                    </fo:block>
+                                                </fo:table-cell>
+                                                <fo:table-cell padding-left="5mm">
+                                                    <fo:block>Henkilötunnus</fo:block>
+                                                    <fo:block text-align="center" margin-right="10mm" padding-top="1mm" padding-bottom="1mm" border-color="black" border-width="0.5mm" border-style="solid" font-size="125%">
+                                                        <fo:block >160272-0150</fo:block>
+                                                    </fo:block>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                        </fo:table-body>
+                                    </fo:table>
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </fo:table-body>
+                    </fo:table>
+
+
+                    <fo:table table-layout="fixed" width="100%" font-size="8pt" text-align="left" display-align="auto" border-color="black" border-width="0.5mm" border-top-style="solid">
+                        <fo:table-column column-width="proportional-column-width(15)"/>
+                        <fo:table-column column-width="proportional-column-width(85)"/>
+                        <fo:table-body font-size="95%">
+                            <fo:table-row height="8mm">
+                                <fo:table-cell>
+                                  <fo:block>1</fo:block>
+                                  <fo:block>HENKILÖ-</fo:block>
+                                  <fo:block>TIEDOT</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell>
+
+                                    <fo:table table-layout="fixed" width="100%">
+                                        <fo:table-column column-width="proportional-column-width(70)"/>
+                                        <fo:table-column column-width="proportional-column-width(30)"/>
+                                        <fo:table-body font-size="95%">
+                                            <fo:table-row height="8mm" border-bottom-style="solid" border-width="0.2mm">
+                                                <fo:table-cell>
+                                                    <fo:block>Sukunimi ja etunimet</fo:block>
+                                                    <fo:block font-family="Times" font-size="80%">Koivisto, Kristian Peter Juhani</fo:block>
+                                                </fo:table-cell>
+                                                <fo:table-cell>
+                                                    <fo:block>Puhelinnumero</fo:block>
+                                                    <fo:block font-family="Times" font-size="80%">050-483 3491</fo:block>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                        </fo:table-body>
+                                    </fo:table>
+
+                                     <fo:table table-layout="fixed" width="100%">
+                                        <fo:table-column column-width="proportional-column-width(100)"/>
+                                        <fo:table-body font-size="95%">
+                                            <fo:table-row height="8mm" border-bottom-style="solid" border-width="0.2mm">
+                                                <fo:table-cell>
+                                                    <fo:block>Lähiosoite</fo:block>
+                                                    <fo:block font-family="Times" font-size="80%">Kukkatuoksunpenger 10</fo:block>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                        </fo:table-body>
+                                    </fo:table>
+
+                                    <fo:table table-layout="fixed" width="100%">
+                                        <fo:table-column column-width="proportional-column-width(30)"/>
+                                        <fo:table-column column-width="proportional-column-width(70)"/>
+                                        <fo:table-body font-size="95%">
+                                            <fo:table-row height="8mm" border-bottom-style="solid" border-width="0.2mm">
+                                                <fo:table-cell>
+                                                    <fo:block>Postinumero</fo:block>
+                                                    <fo:block font-family="Times" font-size="80%">00950</fo:block>
+                                                </fo:table-cell>
+                                                <fo:table-cell>
+                                                    <fo:block>Postitoimipaikka</fo:block>
+                                                    <fo:block font-family="Times" font-size="80%">Helsinki</fo:block>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                        </fo:table-body>
+                                    </fo:table>
+
+                                    <fo:table table-layout="fixed" width="100%">
+                                        <fo:table-column column-width="proportional-column-width(60)"/>
+                                        <fo:table-column column-width="proportional-column-width(40)"/>
+                                        <fo:table-body font-size="95%">
+                                            <fo:table-row height="8mm" border-bottom-style="solid" border-width="0.2mm">
+                                                <fo:table-cell>
+                                                    <fo:block>Nykyinen työtehtävä</fo:block>
+                                                    <fo:block font-family="Times" font-size="80%">Peltiseppä</fo:block>
+                                                </fo:table-cell>
+                                                <fo:table-cell>
+                                                    <fo:block>Ammatti</fo:block>
+                                                    <fo:block font-family="Times" font-size="80%">Ylinotaari</fo:block>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                        </fo:table-body>
+                                    </fo:table>
+
+                                     <fo:table table-layout="fixed" width="100%">
+                                        <fo:table-column column-width="proportional-column-width(100)"/>
+                                        <fo:table-body font-size="95%">
+                                            <fo:table-row height="8mm" border-bottom-style="solid" border-width="0.2mm">
+                                                <fo:table-cell>
+                                                    <fo:block>Päätoimen työnantaja</fo:block>
+                                                    <fo:block font-family="Times" font-size="80%">Oy Apotti Ab</fo:block>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                        </fo:table-body>
+                                    </fo:table>
+
+                                    <fo:table table-layout="fixed" width="100%">
+                                        <fo:table-column column-width="proportional-column-width(50)"/>
+                                        <fo:table-column column-width="proportional-column-width(50)"/>
+                                        <fo:table-body font-size="95%">
+                                            <fo:table-row height="8mm">
+                                                <fo:table-cell>
+                                                    <fo:block>Olen seurannut tutkittavan terveydentilaa alkaen:</fo:block>
+                                                        <fo:block>
+                                                            <fo:block-container height="4mm">                                                     
+                                                                <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Henkilökohtaisesti 17.03.2019</fo:block>
+                                                                </fo:block-container>
+                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
+                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
+                                                                </fo:block-container>    
+                                                            </fo:block-container>
+                                                        </fo:block>
+                                                        <fo:block>
+                                                            <fo:block-container height="4mm">                                                     
+                                                                <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Asiakirjoista 16.1.2002</fo:block>
+                                                                </fo:block-container>
+                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
+                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
+                                                                </fo:block-container>    
+                                                            </fo:block-container>
+                                                        </fo:block>
+                                                </fo:table-cell>
+                                                <fo:table-cell>
+                                                    <fo:block>Miten henkilöllisyys on todettu</fo:block>
+                                                    <fo:block font-family="Times" font-size="80%">Passi</fo:block>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                        </fo:table-body>
+                                    </fo:table>
+                                    
+
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </fo:table-body>
+                    </fo:table>
+
+                    <fo:table table-layout="fixed" width="100%" font-size="8pt" text-align="left" display-align="auto" border-color="black" border-width="0.5mm" border-top-style="solid">
+                        <fo:table-column column-width="proportional-column-width(15)"/>
+                        <fo:table-column column-width="proportional-column-width(85)"/>
+                        <fo:table-body font-size="95%">
+                            <fo:table-row height="8mm">
+                                <fo:table-cell>
+                                  <fo:block>2</fo:block>
+                                  <fo:block>LAUSUNNON</fo:block>
+                                  <fo:block>TARKOITUS</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell>
+
+                                    <fo:table table-layout="fixed" width="100%">
+                                        <fo:table-column column-width="proportional-column-width(50)"/>
+                                        <fo:table-column column-width="proportional-column-width(50)"/>
+                                        <fo:table-body font-size="95%">
+                                            <fo:table-row height="8mm">
+                                                <fo:table-cell>
+                                                        <fo:block>
+                                                            <fo:block-container height="4mm">                                                     
+                                                                <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Sairauspäiväraha</fo:block>
+                                                                </fo:block-container>
+                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
+                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
+                                                                </fo:block-container>    
+                                                            </fo:block-container>
+                                                        </fo:block>
+                                                        <fo:block>
+                                                            <fo:block-container height="4mm">                                                     
+                                                                <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Työterveyshuollon lausunto työssäjaksamismahdollisuuksista</fo:block>
+                                                                </fo:block-container>
+                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
+                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
+                                                                </fo:block-container>    
+                                                            </fo:block-container>
+                                                        </fo:block>
+                                                        <fo:block>
+                                                            <fo:block-container height="4mm">                                                     
+                                                                <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Osasairauspäiväraha</fo:block>
+                                                                </fo:block-container>
+                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
+                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
+                                                                </fo:block-container>    
+                                                            </fo:block-container>
+                                                        </fo:block>
+                                                        <fo:block>
+                                                            <fo:block-container height="4mm">                                                     
+                                                                <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Muu, mikä?</fo:block>
+                                                                </fo:block-container>
+                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
+                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
+                                                                </fo:block-container>    
+                                                            </fo:block-container>
+                                                        </fo:block>
+                                                </fo:table-cell>
+                                                <fo:table-cell>
+                                                        <fo:block>
+                                                            <fo:block-container height="4mm">                                                     
+                                                                <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Erityiskorvattavat lääkkeet tai kliiniset ravintovalmisteet</fo:block>
+                                                                </fo:block-container>
+                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
+                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
+                                                                </fo:block-container>    
+                                                            </fo:block-container>
+                                                        </fo:block>
+                                                        <fo:block>
+                                                            <fo:block-container height="4mm">                                                     
+                                                                <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Kuntoutus</fo:block>
+                                                                </fo:block-container>
+                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
+                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
+                                                                </fo:block-container>    
+                                                            </fo:block-container>
+                                                        </fo:block>
+                                                        <fo:block>
+                                                            <fo:block-container height="4mm">                                                     
+                                                                <fo:block-container left="0mm" top="0mm" position="absolute" >
+                                                                     <fo:block><fo:inline font-family="ZapfDingbats" font-size="140%">&#x274F;</fo:inline>  Työkyvyttömyyseläke / Kuntoutustuki</fo:block>
+                                                                </fo:block-container>
+                                                                <fo:block-container left="0.2mm" top="0.2mm" position="absolute" >
+                                                                    <fo:block><fo:inline font-family="ZapfDingbats" font-size="80%">&#x2718;</fo:inline></fo:block>
+                                                                </fo:block-container>    
+                                                            </fo:block-container>
+                                                        </fo:block>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                        </fo:table-body>
+                                    </fo:table>
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </fo:table-body>
+                    </fo:table>
+
+
+                    <fo:table min-height="200mm" table-layout="fixed" width="100%" font-size="8pt" text-align="left" display-align="auto" border-color="black" border-width="0.5mm" border-top-style="solid">
+                        <fo:table-column column-width="proportional-column-width(15)"/>
+                        <fo:table-column column-width="proportional-column-width(85)"/>
+                        <fo:table-body font-size="95%">
+                            <fo:table-row height="25mm">
+                                <fo:table-cell>
+                                  <fo:block>3</fo:block>
+                                  <fo:block>SAIRAUDET</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell>
+                                    <fo:block>Työkykyyn vaikuttavat sairaudet tärkeysjärjestyksessä (myös ICD-koodit):</fo:block>
+                                    <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
+                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
+                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
+                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
+                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
+                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
+                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
+                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
+                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
+                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
+                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
+                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
+                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
+                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
+                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
+                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
+                                                                        <fo:block font-family="Times" font-size="100%">I48 Eteisvärinä</fo:block>
+                                    <fo:block font-family="Times" font-size="100%">J06.9 Flunssa</fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </fo:table-body>
+                    </fo:table>
+
+
+                    <fo:table table-layout="fixed" width="100%" font-size="8pt" text-align="left" display-align="auto" border-color="black" border-width="0.5mm" border-top-style="solid">
+                        <fo:table-column column-width="proportional-column-width(15)"/>
+                        <fo:table-column column-width="proportional-column-width(85)"/>
+                        <fo:table-body font-size="95%">
+                            <fo:table-row height="30mm">
+                                <fo:table-cell>
+                                  <fo:block>4</fo:block>
+                                  <fo:block>ESITIEDOT</fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell>
+                                    <fo:block>Työkykyyn vaikuttavat sairaudet tärkeysjärjestyksessä (myös ICD-koodit):</fo:block>
+
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </fo:table-body>
+                    </fo:table>
+
+
+                    <fo:block id="end-of-document">
+                        <fo:instream-foreign-object>
+                            <svg width="200mm" height="150mm" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M153 334
+C153 334 151 334 151 334
+C151 339 153 344 156 344
+C164 344 171 339 171 334
+C171 322 164 314 156 314
+C142 314 131 322 131 334
+C131 350 142 364 156 364
+C175 364 191 350 191 334
+C191 311 175 294 156 294
+C131 294 111 311 111 334
+C111 361 131 384 156 384
+C186 384 211 361 211 334
+C211 300 186 274 156 274" style="fill:yellow;stroke:red;stroke-width:2"/>
+                            </svg>
+                        </fo:instream-foreign-object>
+                    </fo:block>
+                </fo:flow>
+            </fo:page-sequence>
+        </fo:root>
+    </xsl:template>
+</xsl:stylesheet>
